@@ -1,0 +1,27 @@
+#heading{
+  background-color: #ecd6fc;
+    padding: 10px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    body{
+        background-color: #bcf5bc;
+    }
+    #camera,#review{
+        border-color: black;
+        border-style: dashed;
+        width: 350px;
+       height: 350px;
+    }
+    p{
+        font-size: medium;
+        color: black;
+        font-weight:400; 
+    }
+    button{
+    background-color:pink;
+    border-color: black;
+    font-size: medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    }

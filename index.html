@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"><meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture App </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+<body>
+   <div class="container" id="main">
+    <center>
+        <h2 id="heading"> Hand Gesture App
+            <br>
+        <span>&#9996;</span>
+        <span>&#129304;</span>
+        <span>&#128406;</span>
+        <span>&#128406;</span>
+        <span>&#128075;</span>
+        <span>&#128079;</span>
+        </h2>
+        <br>
+        <p>Take your selfie of a gesture to know about it's meaning
+            <br>
+            <b>Some of the following gestures are trained  </b>
+            <br>
+            <b>&#9996; &#128076; &#128077; &#129304;</b>
+        </p>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <label>Webcam View - </label>
+            <div id="camera"></div>
+            <br>
+            <br>
+            <button id="take_pic " onclick="take_selfie()">Take Picture</button>
+        </div>
+        <div id="pred_div" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <label> Prediction 1 -</label>
+            <p id='pred'></p>
+            <p id='explain'></p>
+            <br>
+            </div>
+            <br>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <label>Snap Shot - </label>
+            <div id="review"></div>
+            <br>
+            <br>
+            <button id="Predict" onclick="check()">Predict Gesture</button>
+        </div>
+        <script src="main.js"></script>
+        </center>
